@@ -1,0 +1,61 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: beige;
+    color: brown;
+}
+
+nav{
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+
+nav a {
+    color: burlywood;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+nav a:hover {
+    background-color: azure;
+
+}
+h1{
+    text-align: center;
+}
+.szoveg img{
+
+    max-width: 100%;
+}
+article{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em 1em
+}
+section{
+    padding: 10pt;
+}
+.szoveg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
+}
+.szoveg ul{
+    text-align: justify;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        font-size: 1.1em;
+    }
+
+    nav a {
+        display: block;
+
+    }
+    .szoveg{
+        grid-template-columns: 1fr;
+    }
+}
